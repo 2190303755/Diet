@@ -171,7 +171,7 @@ task publishCurseForge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge)
     }
     mainFile.withAdditionalFile(sourcesJar)
 }
-
+/*
 modrinth {
     token = findProperty('modrinthKey') ?: 0
     projectId = "${modrinth_id}"
@@ -182,7 +182,7 @@ modrinth {
     additionalFiles = [sourcesJar]
     gameVersions = "${release_versions}".split(",") as List<String>
 }
-
+*/
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }

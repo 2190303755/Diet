@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.2-SNAPSHOT'
+    id 'fabric-loom' version '1.8-SNAPSHOT'
     id 'maven-publish'
     id 'idea'
     id 'net.darkhax.curseforgegradle' version '1.+'
@@ -109,7 +109,7 @@ task publishCurseForge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge)
     mainFile.addEmbedded("cardinal-components-api")
     mainFile.withAdditionalFile(sourcesJar)
 }
-
+/*
 modrinth {
     token = findProperty('modrinthKey') ?: 0
     projectId = "${modrinth_id}"
@@ -124,3 +124,4 @@ modrinth {
         embedded.project "cardinal-components-api"
     }
 }
+*/
